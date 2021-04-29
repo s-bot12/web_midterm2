@@ -113,8 +113,10 @@
                                         || (j == c && l == e && i == d && k == b) || (k == d && l == e && i == c && j == b))
                                         ;
                                     else
-                                        if (arr[i][j][k][l] != -1 && arr[i][j][k][l] != 0)
+                                        if (arr[i][j][k][l] != -1 && arr[i][j][k][l] != 0) {
+                                            count--;
                                             arr[i][j][k][l] = 0;
+                                        }
                                 }
                                 else if (strike.value == 1 && ball.value == 0) {
                                     if (((i == b) && (j != c && j != d && j != e && k != c && k != d && k != e && l != c && l != d && l != e))
