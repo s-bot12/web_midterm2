@@ -29,7 +29,7 @@ function change() {
 function shffule(size) {
     var ranNo = Math.floor(Math.random() * size);
     document.getElementById("q1").style.backgroundColor = colorNames[ranNo];
-    document.getElementById("q1").value = colorNames[ranNo];
+    document.getElementById("q1").textContent = colorNames[ranNo];
 }
 
 function factorial(input) {
