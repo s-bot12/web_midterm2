@@ -1,0 +1,9 @@
+body {
+    background-color : rgb(247, 252, 255);
+}
+
+ul {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
