@@ -79,5 +79,6 @@ function random_number() { //숫자 야구
         result.textContent = '0' + arr[b][c][d][e] + ' 인가요?';
     else
         result.textContent = arr[b][c][d][e] + ' 인가요?';
+    arr[b][c][d][e] = 0;
     count--;
 }
