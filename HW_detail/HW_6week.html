@@ -1,0 +1,78 @@
+<!-- my css -->
+<link rel="stylesheet" href="/web_midterm2/css/bootstrap.css">
+<link rel="stylesheet" href="/web_midterm2/css/my.css">
+
+<!-- my js -->
+<script src="/web_midterm2/js/bootstrap.js"></script>
+<script src="/web_midterm2/js/my.js"></script>
+
+<title>Web_midterm</title>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light mb-3" style="border-style: groove; border-width: 4px;">
+    <div class="container">
+        <div class="navbar-brand"><font style="color:black;text-shadow:0 0 5px red" ani_type="color(font : 'red', 'text-shadow':'black')">Web_midterm</font></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/web_midterm2/index.html" class="nav-link">소개&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="nav-item"><a href="/web_midterm2/homework.html" class="nav-link">과제 게시판&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="nav-item"><a href="/web_midterm2/game.html" class="nav-link">게임 게시판&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="nav-item"><a href="/web_midterm2/login.html" class="nav-link">로그인&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <div class="container">
+        <h3> <mark>4주차 과제 변형</mark> </h3>
+        <hr>
+        <p1>Q1. 색 이름과 색<br><br></p1>
+        <script>
+            var colorNames = ["maroon", "red", "orange",
+                "yellow", "olive", "purple", "fuchsia", "white",
+                "lime", "green", "navy", "blue", "aqua", "teal",
+                "black", "sliver", "gray"];
+            for (var i = 0; i < colorNames.length; i++) {
+                document.write("<div style=float:left;width:14%;padding:10px;background-color:" + colorNames[i] + ">" + colorNames[i] + "</div>");
+            }
+        </script>
+
+        <br><br><br><br><br><br>
+
+        <p1><mark>Q1-변형. 색 이름과 색</mark><br><br></p1>
+        <script>
+            var colorNames = ["maroon", "red", "orange",
+                "yellow", "olive", "purple", "fuchsia", "white",
+                "lime", "green", "navy", "blue", "aqua", "teal",
+                "black", "sliver", "gray"];
+            document.write("<div id='q1' style=float:left;width:14%;padding:10px;background-color:" + colorNames[0] + ">" + 'Q1_color' + "</div>");
+            setInterval('shffule(colorNames.length);', 1000);
+        </script>
+        <br><br>
+        <hr>
+        <p1>Q2. 펙토리얼 계산<br><br></p1>
+        <p>N 팩토리얼 계산 값을 입력하시오.</p>
+        <input type="text" id="value">
+        <button type="button" onclick="document.getElementById('sentence').innerHTML=
+            document.getElementById('value').value + '! 계산 결과는 ' + 
+            factorial(document.getElementById('value').value) + '입니다.'">N 팩토리얼 계산</button>
+        <p id='sentence'></p>
+        <br><br>
+        <p1><mark>Q2-변형. 펙토리얼 계산</mark><br><br></p1>
+        <p>+, *, -, / 등으로 이루어진 계산 값을 입력하시오. (펙토리얼도 가능)</p>
+        <input type="text" id="value2">
+        <button type="button" onclick="document.getElementById('sentence2').innerHTML=
+            document.getElementById('value2').value + '계산 결과는 ' + 
+            calculate(document.getElementById('value2').value) + '입니다.'">계산</button>
+        <p id='sentence2'></p>
+        <br><br>
+        <hr>
+
+        <br><br><br><br><br><br>
+        <hr>
+    </div>
+</body>
