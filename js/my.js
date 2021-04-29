@@ -66,7 +66,7 @@ function init_arr() { //숫자 야구
 
 function random_number() { //숫자 야구
     if(count <= 0) {
-        result.textContent = "남은 경우의 수가 없습니다... 중간에 잘못 입력하셨어요!";
+        question.textContent = "남은 경우의 수가 없습니다... 중간에 잘못 입력하셨어요!";
         return false;
     }
     do {
